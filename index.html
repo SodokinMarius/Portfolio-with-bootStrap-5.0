@@ -847,7 +847,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">RESTAURANT API</h5>
                                 <p class="card-text">API de gestion des restaurants. Gerer les restaurants qui sont dans un rayon de 3km. </p>
-                                <a href="#" class="btn btn-primary">Lire plus</a>
                             
                                 <!--OffCanvas start-->
                                 <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-p4" aria-controls="offcanvasBottom">Lire plus</a>
@@ -1162,7 +1161,7 @@
             </div>
         </section>
 
-        <section class="mb-2">
+        <section class="mb-2" id="contact">
 
             <div class="container">
                 <div class="row">
@@ -1180,56 +1179,114 @@
                     </div>
                     <div class="col-6">
                         <div class="container">
+                          <form action="" method="" class="rows">
                             <div class="row">
                                 <div class="col-12 col-md-6">
+                                
+                                    <div class="mb-3">
+                                      <label for="InputName" class="form-label">Nom</label>
+                                      <input type="text" class="form-control" id="InputName"  required>
+                                    </div>
+                                  </div>
 
-                                    
-                                </div>
-                                <div class="col"></div>
+                                  <div class="col">
+                                    <div class="mb-3">
+                                      <label for="InputFirstName" class="form-label">Prénoms</label>
+                                      <input type="text" class="form-control" id="InputFirstName" required>
+                                    </div>
+
+                                  </div>
+                                                            
                             </div>
 
-                            <div class="row"></div>
-                            <div class="row"></div>
+                            <div class="row">
+                             <div class="col">
+                              <div class="mb-3 form-group">
+                                <label for="InputEmail" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control" id="InputEmail" aria-describedby="EmailHelp" placeholder="exemple@gmail.com" required>
+                                <div id="EmailHelp" class="form-text text-info">We'll never share your email with anyone else.</div>
+                              </div>
+                             </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="mb-3 label-group">
+                                  <label for="InputMessage" class="form-label">Message</label>
+                                  <textarea type="text" class="form-label w-100" id="InputMessage"  rows="3" required></textarea>
+                                </div>
+                              </div>
+                            </div>
 
                             <div class="row">
-                                <div class="col"></div>                         </div>
+                                <div class="col">
+                                  <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                                </div>  
+                            </div>        
+                              </form>
                         </div>
-
+                      </div>
                     </div>
                          
                 </div>
             </div>
         </section>
 
- 
-            <section>
-                <div class="container">
-                   
-                    <div class="row  gx-4">
-                        <div class="col-3 bg-secondary ml-1">Not defined</div>
-                        <div class="col-3 bg-secondary ml-1">Not defined</div>
-                        <div class="col-3 bg-secondary ml-1"> Not defined</div>
-                        <div class="col-3 bg-secondary"> Not defined</div>
-                             
-                    </div>
-                </div>
-            </section>
+
        
     </main>
 
-    <footer>
+    <footer class="mt-4">
 
-        <ul class="list-inline text-md-end">
-            <li class="list-inline-item"><i class="bi bi-linkedin"></i>
-            </li>
-            <li class="list-inline-item"><i class="bi bi-twitter"></i>
-            </li>
-            <li class="list-inline-item"><i class="bi bi-facebook"></i>
-            </li>
-            <li class="list-inline-item"><i class="bi bi-instagram"></i>
-            </li>
+      <div class="container">
+                   
+        <div class="row  gx-4">
+            <div class="col-sm-12 col-md-4">
+              <a href="index.html" class="navbar-brand text-uppercase fw-bold"> 
+                <span class="bg-gradiant text-light bg-primary p-2 rounded-3">Yao Marius </span>  
+                  SODOKIN</a>
+            </div>
+            <div class="col-sm-12  col-md-4 ">
+              <!--Button Modal tiggrer-->
+              <a href="#" class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#legalMentionsModal">Mentions Légales</a> 
+                              
+                    <!-- Modal -->
+                    <div class="modal fade" id="legalMentionsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="legalMentionsModalLabel">Mentions Légales</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus autem quae eos reprehenderit, eius accusamus nisi quis? Quis animi voluptas culpa deleniti molestias incidunt rerum deserunt blanditiis repellat necessitatibus enim rem adipisci quod, assumenda, velit illo fuga, quam quas ipsam reprehenderit ab dolorum. Nostrum maxime totam dolorem quia ipsum dolore.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quitter</button>
+                                <button type="button" class="btn btn-primary">Enregister les modifications</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        </ul>
+            </div>
+            <div class="col-sm-12  col-md-4 "> 
+              <ul class="list-inline text-md-end">
+                <li class="list-inline-item"><i class="bi bi-linkedin"></i>
+                </li>
+                <li class="list-inline-item"><i class="bi bi-twitter"></i>
+                </li>
+                <li class="list-inline-item"><i class="bi bi-facebook"></i>
+                </li>
+                <li class="list-inline-item"><i class="bi bi-instagram"></i>
+                </li>
+    
+            </ul>
+            </div>
+                 
+        </div>
+    </div>
+
+        
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
