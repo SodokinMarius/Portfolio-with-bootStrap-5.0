@@ -1,0 +1,22 @@
+{
+  "name": "openclrm-bootstrap-5",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SodokinMarius/Portfolio-with-bootStrap-5.0.git"
+  },
+  "author": "Yao Marius SODOKIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SodokinMarius/Portfolio-with-bootStrap-5.0/issues"
+  },
+  "homepage": "https://github.com/SodokinMarius/Portfolio-with-bootStrap-5.0#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
